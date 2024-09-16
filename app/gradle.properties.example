@@ -1,0 +1,4 @@
+MYAPP_KEYSTORE_FILE=path_to_your_keystore.jks
+MYAPP_KEYSTORE_PASSWORD=your_keystore_password
+MYAPP_KEY_ALIAS=your_key_alias
+MYAPP_KEY_PASSWORD=your_key_password
