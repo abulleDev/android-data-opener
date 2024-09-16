@@ -20,9 +20,9 @@ class MainActivity : ComponentActivity() {
         val intent = Intent(Intent.ACTION_VIEW)
             .setPackage("com.google.android.documentsui")
             .setDataAndType(folderUri, "vnd.android.document/directory")
-            .setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-            .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-            .setFlags(Intent.FLAG_RECEIVER_FOREGROUND)
+            .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            .addFlags(Intent.FLAG_RECEIVER_FOREGROUND)
             .setClassName(
                 "com.google.android.documentsui",
                 "com.android.documentsui.files.FilesActivity"
